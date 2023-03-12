@@ -1,3 +1,68 @@
-h1 {
-    color: brown;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 20px
 }
+
+
+body {
+    background-color: khaki;
+}
+
+.content-container {
+    max-width: 320px;
+    margin: 10px auto;
+    overflow: hidden;
+}
+
+.header__title {
+    text-align: center;
+}
+
+.main-title {
+    text-align: center;
+}
+
+.accordion {
+    padding: 0;
+    margin: 10px 20px ;
+    border: 2px solid rgb(243, 170, 143);
+    border-radius: 5px;
+
+}
+
+.accor-title {
+    display: block;
+    color:rgb(0, 0, 255);
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    padding-top: 10px;
+    padding-left: 20px;
+    transition: 0.5s;
+}
+
+.accor-title:hover {
+    color: black;
+}
+
+.accor-content {
+    border-top: 2px solid rgb(243, 170, 143);
+}
+
+.accordion .accor-input,
+.accordion .accor-content {
+    display: none;
+    appearance: none;
+}
+
+
+img {
+    width: 100%
+}
+
+.accordion :checked ~ .accor-content {
+    display: block
+}
+
