@@ -25,11 +25,8 @@ body {
 }
 
 .accordion {
-    padding: 0;
     margin: 10px 20px ;
-    border: 2px solid rgb(243, 170, 143);
     border-radius: 5px;
-
 }
 
 .accor-title {
@@ -41,14 +38,12 @@ body {
     padding-top: 10px;
     padding-left: 20px;
     transition: 0.5s;
+    border-top: 2px solid maroon;
+    padding-bottom: 5px;
 }
 
 .accor-title:hover {
     color: black;
-}
-
-.accor-content {
-    border-top: 2px solid rgb(243, 170, 143);
 }
 
 .accordion .accor-input,
@@ -57,12 +52,24 @@ body {
     appearance: none;
 }
 
+.accordion :checked ~ .accor-content {
+    display: block;
+}
 
 img {
-    width: 100%
+    width: 100%;
 }
 
-.accordion :checked ~ .accor-content {
-    display: block
+.icons {
+    display: block;
+    width: 5%;
+    margin-left: 235px;
+    margin-top: -20px;
 }
 
+.icons:hover {
+    transform: rotate(45deg);
+    transition-duration: 0.3s;
+    transition-property: 1s;
+    transition-timing-function: initial;
+}
